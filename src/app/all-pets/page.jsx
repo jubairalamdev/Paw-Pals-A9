@@ -1,10 +1,12 @@
-import React from 'react';
+import AllPets from "@/Components/AllPets/AllPets";
+import Testimonials from "@/Components/homepage/Testimonials";
 
 const AllPetsPage = () => {
     return (
-        <div>
-            This is all pets page
-        </div>
+        <>
+            <AllPets />
+            <Testimonials />
+        </>
     );
 };
 
