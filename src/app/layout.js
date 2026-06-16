@@ -1,7 +1,11 @@
+import dns from "node:dns";
+dns.setServers(['8.8.8.8', '8.8.4.4'])
+
 import { Lilita_One, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/common/Navbar";
 import Footer from "@/Components/common/Footer";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const lilita = Lilita_One({
   subsets: ["latin"],
@@ -24,10 +28,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${lilita.variable} ${openSans.variable}`}>
-      <body className="font-open-sans antialiased bg-[#E7F0F7]">
+      <body className="font-open-sans antialiased bg-[#d3e4f1]">
         <Navbar />
         {children}
         <Footer />
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          transition={Bounce}
+        />
       </body>
     </html>
   );
