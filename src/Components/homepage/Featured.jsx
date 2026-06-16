@@ -13,10 +13,10 @@ const FeaturedPets = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl  font-[family-name:var(--font-lilita)] text-[#193EAC]">
+          <h2 className="text-4xl md:text-5xl  font-(family-name:--font-lilita) text-[#193EAC]">
             Featured Pets
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-[family-name:var(--font-open-sans)] text-lg">
+          <p className="text-gray-600 max-w-2xl mx-auto font-(family-name:--font-open-sans) text-lg">
             Meet some of our adorable friends who are looking for a forever home. 
             They are healthy, vaccinated, and ready to play!
           </p>
@@ -33,7 +33,7 @@ const FeaturedPets = () => {
         <div className="text-center">
           <Link 
             href="/all-pets"
-            className="w-fit mx-auto border-2 flex gap-2 border-[#193EAC] text-[#193EAC] hover:bg-[#193EAC] hover:text-white font-bold font-[family-name:var(--font-open-sans)] py-3 px-10 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="w-fit mx-auto border-2 flex gap-2 border-[#193EAC] text-[#193EAC] hover:bg-[#193EAC] hover:text-white font-bold font-(family-name:--font-open-sans) py-3 px-10 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             View All Pets
             <ArrowRight />

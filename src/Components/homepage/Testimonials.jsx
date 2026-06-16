@@ -9,7 +9,7 @@ const Testimonials = () => {
 
             {/* Section Title - Primary Color */}
             <div className="text-center mb-16 px-4">
-                <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-lilita)] text-[#193EAC] mb-3">
+                <h2 className="text-3xl md:text-4xl font-(family-name:--font-lilita) text-[#193EAC] mb-3">
                     Loved by {" "}
                     <span className="">
                         Everyone

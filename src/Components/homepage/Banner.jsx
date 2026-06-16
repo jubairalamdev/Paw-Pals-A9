@@ -6,7 +6,7 @@ const HomeBanner = () => {
   return (
     // Section with Background Color and Background Pattern
     <section 
-      className="relative w-full bg-[#E7F0F7] pt-10 md:pt-20 overflow-hidden"
+      className="relative w-full bg-[#d3e4f1] pt-10 md:pt-20 overflow-hidden"
     >
       {/* Background Pattern Image */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
@@ -26,7 +26,7 @@ const HomeBanner = () => {
           {/* --- Left Side: Text & Buttons --- */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl font-[family-name:var(--font-lilita)] font- leading-tight text-[#193EAC]">
+            <h1 className="text-4xl md:text-6xl font-(family-name:--font-lilita) font- leading-tight text-[#193EAC]">
               Adopt a Pet & <br />
               <span className="text-[#F0AA38]">Change a Life</span>
             </h1>

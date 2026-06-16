@@ -11,11 +11,11 @@ const WhyChooseUs = () => {
           
           {/* Section Title */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-lilita)] text-[#193EAC] mb-2">
+            <h2 className="text-3xl md:text-4xl font-(family-name:--font-lilita) text-[#193EAC] mb-2">
               Why Choose Us?
             </h2>
             <div className="h-1 w-20 bg-[#F0AA38] rounded-full"></div>
-            <p className="mt-4 text-gray-600 font-[family-name:var(--font-open-sans)]">
+            <p className="mt-4 text-gray-600 font-(family-name:--font-open-sans)">
               We provide a safe and loving environment for every pet, ensuring they find the perfect forever home.
             </p>
           </div>
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
                 <ShieldCheck size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-[#193EAC] font-[family-name:var(--font-open-sans)]">
+                <h3 className="font-bold text-[#193EAC] font-(family-name:--font-open-sans)">
                   Verified Pets
                 </h3>
                 <p className="text-xs text-gray-500">Health checked & vaccinated.</p>
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
                 <Heart size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-[#193EAC] font-[family-name:var(--font-open-sans)]">
+                <h3 className="font-bold text-[#193EAC] font-(family-name:--font-open-sans)">
                   Loving Care
                 </h3>
                 <p className="text-xs text-gray-500">Raised in safe environments.</p>
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                 <Clock size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-[#193EAC] font-[family-name:var(--font-open-sans)]">
+                <h3 className="font-bold text-[#193EAC] font-(family-name:--font-open-sans)">
                   Fast Process
                 </h3>
                 <p className="text-xs text-gray-500">Quick & easy adoption steps.</p>
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
                 <MessageCircle size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-[#193EAC] font-[family-name:var(--font-open-sans)]">
+                <h3 className="font-bold text-[#193EAC] font-(family-name:--font-open-sans)">
                   24/7 Support
                 </h3>
                 <p className="text-xs text-gray-500">We help you every step.</p>

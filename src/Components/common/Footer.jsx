@@ -30,7 +30,7 @@ const Footer = () => {
               />
             </div>
           </Link>
-          <p className="mt-4 text-center text-blue-100 max-w-md font-[family-name:var(--font-open-sans)]">
+          <p className="mt-4 text-center text-blue-100 max-w-md font-(family-name:--font-open-sans)">
             Connecting loving hearts with paws in need. Adopt, {"don't"} shop.
           </p>
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           
           {/* Column 1: Keep Updated (Subscription) */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-lilita)] text-[#F0AA38]">
+            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
               Keep Updated
             </h3>
             <p className="text-sm text-blue-100">
@@ -60,10 +60,10 @@ const Footer = () => {
 
           {/* Column 2: Other Pages */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-lilita)] text-[#F0AA38]">
+            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
               Other Pages
             </h3>
-            <ul className="space-y-2 font-[family-name:var(--font-open-sans)]">
+            <ul className="space-y-2 font-(family-name:--font-open-sans)">
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">About Us</Link></li>
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">Our Team</Link></li>
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">Success Stories</Link></li>
@@ -73,10 +73,10 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-lilita)] text-[#F0AA38]">
+            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
               Quick Links
             </h3>
-            <ul className="space-y-2 font-[family-name:var(--font-open-sans)]">
+            <ul className="space-y-2 font-(family-name:--font-open-sans)">
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">Privacy Policy</Link></li>
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">Terms of Service</Link></li>
               <li><Link href="#" className="hover:text-[#F0AA38] hover:translate-x-1 transition-all inline-block">Support Center</Link></li>
@@ -86,10 +86,10 @@ const Footer = () => {
 
           {/* Column 4: Our Store (Contact) */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-lilita)] text-[#F0AA38]">
+            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
               Contact Us
             </h3>
-            <ul className="space-y-3 font-[family-name:var(--font-open-sans)]">
+            <ul className="space-y-3 font-(family-name:--font-open-sans)">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-[#F0AA38] shrink-0 mt-1" />
                 <span>123 Puppy Lane, Pet City, NY 10012</span>
@@ -109,7 +109,7 @@ const Footer = () => {
 
         {/* --- Bottom Bar --- */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-blue-200 font-[family-name:var(--font-open-sans)]">
+          <p className="text-sm text-blue-200 font-(family-name:--font-open-sans)">
             &copy; 2024 Paw Pals. All rights reserved.
           </p>
 

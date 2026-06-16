@@ -48,10 +48,10 @@ const AllPetsPage = () => {
             <div className="w-full h-full bg-[url('/images/banner-bg.png')] bg-cover bg-center"></div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-[family-name:var(--font-lilita)] relative z-10">
+        <h1 className="text-4xl md:text-5xl font-(family-name:--font-lilita) relative z-10">
           Find Your Perfect Companion
         </h1>
-        <p className="mt-4 text-blue-100 max-w-2xl mx-auto font-[family-name:var(--font-open-sans)] relative z-10">
+        <p className="mt-4 text-blue-100 max-w-2xl mx-auto font-(family-name:--font-open-sans) relative z-10">
           Browse through hundreds of adorable pets waiting for a loving home.
         </p>
       </div>
@@ -68,7 +68,7 @@ const AllPetsPage = () => {
               placeholder="Search by name..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] focus:ring-1 focus:ring-[#193EAC] font-[family-name:var(--font-open-sans)] text-gray-700"
+              className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] focus:ring-1 focus:ring-[#193EAC] font-(family-name:--font-open-sans) text-gray-700"
             />
           </div>
 
@@ -77,7 +77,7 @@ const AllPetsPage = () => {
             <select
               value={selectedSpecies}
               onChange={(e) => setSelectedSpecies(e.target.value)}
-              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] font-[family-name:var(--font-open-sans)] text-gray-700 appearance-none bg-white cursor-pointer"
+              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] font-(family-name:--font-open-sans) text-gray-700 appearance-none bg-white cursor-pointer"
             >
               <option value="All">All Species</option>
               <option value="Dog">Dogs</option>
@@ -93,7 +93,7 @@ const AllPetsPage = () => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] font-[family-name:var(--font-open-sans)] text-gray-700 appearance-none bg-white cursor-pointer"
+              className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:border-[#193EAC] font-(family-name:--font-open-sans) text-gray-700 appearance-none bg-white cursor-pointer"
             >
               <option value="default">Sort By: Default</option>
               <option value="price-asc">Price: Low to High</option>
@@ -108,7 +108,7 @@ const AllPetsPage = () => {
       <div className="container mx-auto max-w-[1280px] px-6 mt-12">
         
         {/* Results Count */}
-        <p className="text-gray-500 font-[family-name:var(--font-open-sans)] mb-6">
+        <p className="text-gray-500 font-(family-name:--font-open-sans) mb-6">
           Showing <span className="font-bold text-[#193EAC]">{filteredPets.length}</span> pets
         </p>
 
@@ -128,7 +128,7 @@ const AllPetsPage = () => {
                 width={400}
                 height={400}
             />
-            <h3 className="text-xl md:text-3xl font-[family-name:var(--font-lilita)] font- leading-tight text-[#646464]">
+            <h3 className="text-xl md:text-3xl font-(family-name:--font-lilita) font- leading-tight text-[#646464]">
               Uh oh! I {"couldn't"} find any pets for you
             </h3>
         </main>

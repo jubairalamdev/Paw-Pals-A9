@@ -28,13 +28,13 @@ const PetCard = ({ pet }) => {
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-2">
           {/* Name */}
-          <h3 className="text-2xl font-[family-name:var(--font-lilita)] text-[#193EAC] group-hover:text-[#F0AA38] transition-colors">
+          <h3 className="text-2xl font-(family-name:--font-lilita) text-[#193EAC] group-hover:text-[#F0AA38] transition-colors">
             {pet.name}
           </h3>
         </div>
         
         {/* Meta Info */}
-        <div className="text-sm text-gray-500 font-[family-name:var(--font-open-sans)] mb-4 space-y-1">
+        <div className="text-sm text-gray-500 font-(family-name:--font-open-sans) mb-4 space-y-1">
           <p className="flex items-center gap-2">
             <span>Breed:</span> 
             <span className="font-medium text-gray-800">{pet.breed}</span>
@@ -55,7 +55,7 @@ const PetCard = ({ pet }) => {
           {/* View Details Button */}
           <Link 
             href={`/pet-details/${pet._id}`}
-            className="bg-[#193EAC] hover:bg-[#2a52d6] text-white font-bold font-[family-name:var(--font-open-sans)] py-2 px-5 rounded-full transition-colors duration-300 shadow-md"
+            className="bg-[#193EAC] hover:bg-[#2a52d6] text-white font-bold font-(family-name:--font-open-sans) py-2 px-5 rounded-full transition-colors duration-300 shadow-md"
           >
             View Details
           </Link>
