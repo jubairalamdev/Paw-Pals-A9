@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Samantha Johnson",
+    "role": "Adopted a Golden Retriever",
+    "quote": "Adopting Buddy was the best decision I've ever made. The process was so smooth, and he fits perfectly into our family.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 2,
+    "name": "Isabella Rodriguez",
+    "role": "Adopted a Siamese Cat",
+    "quote": "I found my soulmate Luna here. The team was incredibly supportive and helped me understand exactly what she needed.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "role": "Foster Parent",
+    "quote": "Professional and caring. They ensured that my new Beagle was healthy and vaccinated before bringing him home.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "role": "Adopted a Holland Lop",
+    "quote": "Paw Pals made it so easy to find the perfect rabbit. Their facility is clean, and the staff clearly loves the animals.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "role": "Adopted a German Shepherd",
+    "quote": "Fast adoption process and top-notch support. Max is now my running partner and best friend. Highly recommended!",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Lee",
+    "role": "Adopted a Persian Cat",
+    "quote": "Exceptional care for the pets. Bella was so well-socialized when I got her. I can't thank Paw Pals enough.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 7,
+    "name": "James Carter",
+    "role": "Adopted a Macaw",
+    "quote": "They really helped me prepare for bringing a bird home. Rio is happy, healthy, and talks all day long!",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 8,
+    "name": "Olivia Brown",
+    "role": "Donor & Volunteer",
+    "quote": "The transparency here is amazing. I know exactly where my donations go, and I've seen the impact it has.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 9,
+    "name": "Robert Taylor",
+    "role": "Adopted a Labrador",
+    "quote": "Daisy brings so much joy to our house. The adoption counselors were patient and matched us with the perfect dog.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 10,
+    "name": "Sophia Martinez",
+    "role": "Adopted a Dutch Rabbit",
+    "quote": "A wonderful experience from start to finish. Oreo is the cutest bunny, and the follow-up support was great.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 11,
+    "name": "Daniel Anderson",
+    "role": "Adopted a Bombay Cat",
+    "quote": "Reliable and trustworthy. I was nervous about adopting a black cat, but Shadow is the most loving pet ever.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  },
+  {
+    "id": 12,
+    "name": "Jessica Thomas",
+    "role": "Adopted a Beagle Mix",
+    "quote": "Communication was excellent. They kept me updated on Charlie's progress every step of the way until pickup.",
+    "image": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
+  }
+]
