@@ -10,11 +10,11 @@ const NotFoundPage = () => {
                 width={500}
                 height={500}
             />
-            <h3 className="text-xl md:text-3xl font-[family-name:var(--font-lilita)] font- leading-tight text-[#646464]">
+            <h3 className="text-xl md:text-3xl font-(family-name:--font-lilita) leading-tight text-[#646464]">
               Uh oh! I cannot Find such Page
             </h3>
             <Link 
-                href="/all-pets"
+                href="/"
                 className="bg-[#F0AA38] mt-2 hover:bg-[#d9921f] text-white font-bold font-open-sans py-2 px-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 {"Let's"} go Back
