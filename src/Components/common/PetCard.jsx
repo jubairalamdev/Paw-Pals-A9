@@ -16,16 +16,10 @@ const PetCard = ({ pet }) => {
         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide text-[#193EAC] shadow-sm">
           {pet.species}
         </div>
-        {/* Status Badge (if adopted) */}
-        {pet.status === "adopted" && (
-          <div className="absolute top-4 right-4 bg-[#F85C72] text-white px-3 py-1 rounded-full text-xs font-bold uppercase shadow-sm">
-            Adopted
-          </div>
-        )}
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-6 flex flex-col grow">
         <div className="flex justify-between items-start mb-2">
           {/* Name */}
           <h3 className="text-2xl font-(family-name:--font-lilita) text-[#193EAC] group-hover:text-[#F0AA38] transition-colors">
