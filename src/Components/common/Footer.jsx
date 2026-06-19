@@ -40,7 +40,7 @@ const Footer = () => {
           
           {/* Column 1: Keep Updated (Subscription) */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
+            <h3 className="text-xl font-(family-name:--font-lilita) text-[#F0AA38]">
               Keep Updated
             </h3>
             <p className="text-sm text-blue-100">
@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Column 2: Other Pages */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
+            <h3 className="text-xl font-(family-name:--font-lilita) text-[#F0AA38]">
               Other Pages
             </h3>
             <ul className="space-y-2 font-(family-name:--font-open-sans)">
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
+            <h3 className="text-xl  font-(family-name:--font-lilita) text-[#F0AA38]">
               Quick Links
             </h3>
             <ul className="space-y-2 font-(family-name:--font-open-sans)">
@@ -86,7 +86,7 @@ const Footer = () => {
 
           {/* Column 4: Our Store (Contact) */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold font-(family-name:--font-lilita) text-[#F0AA38]">
+            <h3 className="text-xl  font-(family-name:--font-lilita) text-[#F0AA38]">
               Contact Us
             </h3>
             <ul className="space-y-3 font-(family-name:--font-open-sans)">
@@ -110,7 +110,7 @@ const Footer = () => {
         {/* --- Bottom Bar --- */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-blue-200 font-(family-name:--font-open-sans)">
-            &copy; 2024 Paw Pals. All rights reserved.
+            &copy; 2025 Paw Pals. All rights reserved by Jubair Alam
           </p>
 
           {/* Social Icons */}
