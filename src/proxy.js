@@ -16,5 +16,6 @@ export const config = {
     matcher: [
     '/dashboard/:path*',
     '/pet-details/:path*',
+    '/all-pets'
   ],
 }
