@@ -3,8 +3,8 @@ dns.setServers(['8.8.8.8', '8.8.4.4'])
 
 import { Lilita_One, Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/common/Navbar";
-import Footer from "@/Components/common/Footer";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 import { Bounce, ToastContainer } from "react-toastify";
 
 const lilita = Lilita_One({

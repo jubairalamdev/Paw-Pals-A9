@@ -4,7 +4,7 @@ import { headers } from 'next/headers';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, FileText, MapPin, ExternalLink } from "lucide-react";
-import RequestCard from '@/Components/Requests/Requestcard';
+import RequestCard from '@/components/Requests/Requestcard';
 
 const MyRequestsPage = async () => {
     const session = await auth.api.getSession({

@@ -1,7 +1,7 @@
 import { auth } from '@/lib/auth';
 import { getPetsByUserId } from '@/utils/actions';
 import { headers } from 'next/headers';
-import MyListingCard from '@/Components/Listings/MyListingCard';
+import MyListingCard from '@/components/Listings/MyListingCard';
 import { Plus } from 'lucide-react';
 
 const MyListingsPage = async() => {

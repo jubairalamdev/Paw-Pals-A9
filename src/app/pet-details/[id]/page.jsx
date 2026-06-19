@@ -9,7 +9,7 @@ import {
   PawPrint 
 } from "lucide-react"
 import { getPetById } from "@/utils/actions";
-import PetAdoptionForm from "@/Components/PetDetails/PetAdoptionForm";
+import PetAdoptionForm from "@/components/PetDetails/PetAdoptionForm";
 
 const PetDetailsPage = async({ params }) => {
   const { id } = await params;

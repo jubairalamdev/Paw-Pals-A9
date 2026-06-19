@@ -1,5 +1,5 @@
-import AllPets from "@/Components/AllPets/AllPets";
-import Testimonials from "@/Components/homepage/Testimonials";
+import AllPets from "@/components/AllPets/AllPets";
+import Testimonials from "@/components/homepage/Testimonials";
 import { getAllPets } from "@/utils/actions";
 
 const AllPetsPage = async() => {
