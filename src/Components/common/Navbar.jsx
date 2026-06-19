@@ -9,9 +9,9 @@ import { logoutUser } from "@/utils/authentication/logoutUser";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
-  console.log(session)
+  // console.log(session)
   const user = session?.user;
-  console.log(user)
+  // console.log(user)
 
   const [isOpen, setIsOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -60,7 +60,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              href="/my-requests" 
+              href="/dashboard/my-requests" 
               className="hover:text-black hover:scale-105 transition-all duration-300"
             >
               My Requests
@@ -86,7 +86,6 @@ const Navbar = () => {
               >
                 <span className="font-bold text-[#193EAC] font-open-sans text-sm">
                   {user.name}
-                  s
                 </span>
                 <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-[#193EAC]">
                   <Image
@@ -103,7 +102,7 @@ const Navbar = () => {
               {isProfileOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50 animate-fadeIn">
                   <Link
-                    href="/dashboard"
+                    href="/dashboard/my-requests"
                     className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#193EAC] font-open-sans font-medium transition-colors"
                     onClick={() => setIsProfileOpen(false)}
                   >
@@ -167,7 +166,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/my-requests" className="block py-2 hover:text-black hover:pl-2 transition-all">
+              <Link href="/dashboard/my-requests" className="block py-2 hover:text-black hover:pl-2 transition-all">
                 My Requests
               </Link>
             </li>
@@ -185,7 +184,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/dashboard"
+                    href="/dashboard/add-pet"
                     className="block py-2 hover:text-black hover:pl-2 transition-all"
                     onClick={toggleMenu}
                   >
