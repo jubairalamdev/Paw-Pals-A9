@@ -5,12 +5,12 @@ import TestimonialCard from "./TestimonialCard";
 const Testimonials = () => {
 
     return (
-        <section className="bg-[#fff] py-20 overflow-hidden">
+        <section className="bg-white py-20 overflow-hidden">
 
             {/* Section Title - Primary Color */}
             <div className="text-center mb-16 px-4">
                 <h2 className="text-3xl md:text-4xl font-(family-name:--font-lilita) text-[#193EAC] mb-3">
-                    Loved by {" "}
+                    Trusted by {" "}
                     <span className="">
                         Everyone
                     </span>
