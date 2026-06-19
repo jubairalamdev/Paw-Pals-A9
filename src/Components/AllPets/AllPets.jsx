@@ -2,13 +2,12 @@
 
 import { useState, useEffect } from "react";
 import PetCard from "@/components/common/PetCard";
-import pets from "@/data/pets.json";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineSort } from "react-icons/md";
 import Image from "next/image";
-import Link from "next/link";
 
-const AllPetsPage = () => {
+const AllPetsPage = ({pets}) => {
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSpecies, setSelectedSpecies] = useState("All");
   const [sortBy, setSortBy] = useState("default");
@@ -57,7 +56,7 @@ const AllPetsPage = () => {
       </div>
 
       {/* --- Filter Bar (Option A: Horizontal) --- */}
-      <div className="container mx-auto max-w-[1280px] px-6 -mt-8 relative z-20">
+      <div className="container mx-auto max-w-300 px-6 -mt-8 relative z-20">
         <div className="bg-white p-4 rounded-xl shadow-lg flex flex-col md:flex-row gap-4 items-center justify-between border border-gray-100">
           
           {/* Search Input */}
@@ -105,7 +104,7 @@ const AllPetsPage = () => {
       </div>
 
       {/* --- Pets Grid --- */}
-      <div className="container mx-auto max-w-[1280px] px-6 mt-12">
+      <div className="container mx-auto max-w-300 px-6 mt-12">
         
         {/* Results Count */}
         <p className="text-gray-500 font-(family-name:--font-open-sans) mb-6">
