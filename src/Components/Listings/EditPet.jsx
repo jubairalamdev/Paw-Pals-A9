@@ -10,7 +10,7 @@ const EditPet = ({ pet }) => {
         e.preventDefault();
         const form = e.target;
         const formData = new FormData(form);
-        console.log(pet, formData)
+        // console.log(pet, formData)
         const result = await updatePet(pet._id, formData);
         if (result && result.modifiedCount) {
             toast.success("Pet Updated successfully!");

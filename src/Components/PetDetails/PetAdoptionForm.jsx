@@ -29,7 +29,7 @@ const PetAdoptionForm = ({ pet }) => {
                     adoptionDate: new Date(adoptionDate)
                 }
                 const response = handleAdoption(adoptionData)
-                console.log(response)
+                // console.log(response)
                 if (response) {
                     toast.success(`${adoptionData.petName} is Now Adopted!`)
                 }

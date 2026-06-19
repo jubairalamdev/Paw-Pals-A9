@@ -19,5 +19,5 @@ export const registerUser = async (e) => {
     if(data){
         toast.success(`${auth_name} Successful`)
     }
-    console.log("DATA: ", data, "ERROR: ", error)
+    // console.log("DATA: ", data, "ERROR: ", error)
 } 

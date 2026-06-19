@@ -31,7 +31,7 @@ const RequestCard = ({ request }) => {
             return;
         }
 
-        console.log("🚀 Sending clean text hex string to Server Action:", requestIdToDelete);
+        // console.log("🚀 Sending clean text hex string to Server Action:", requestIdToDelete);
 
         const res = await cancelRequest(requestIdToDelete);
         

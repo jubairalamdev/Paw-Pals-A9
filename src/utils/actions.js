@@ -15,7 +15,7 @@ export const getAllPets = async () => {
             authorization: `Bearer ${token}`
         }
     });
-    console.log("this is the token here: ", token)
+    // console.log("this is the token here: ", token)
     return res.json()
 }
 
@@ -32,7 +32,7 @@ export const getPetById = async (petId) => {
 }
 
 export const handleAdoption = async (adoptionData) => {
-    console.log(adoptionData)
+    // console.log(adoptionData)
     const res = await fetch(`http://localhost:5000/requests`, {
         method: "POST",
         headers: {
@@ -64,9 +64,9 @@ export const getRequestByUserId = async (userId) => {
             authorization: `Bearer ${token}`
         }
         });
-        console.log(res)
+        // console.log(res)
         const data = await res.json();
-        console.log(data)
+        // console.log(data)
 
         // Convert to a deeply pure plain array before sending to the client tier
         return JSON.parse(JSON.stringify(data));
@@ -87,9 +87,9 @@ export const getRequestByPetId = async (petId) => {
                 authorization: `Bearer ${token}`
             }
         });
-        console.log(res)
+        // console.log(res)
         const data = await res.json();
-        console.log(data)
+        // console.log(data)
 
         // Convert to a deeply pure plain array before sending to the client tier
         return JSON.parse(JSON.stringify(data));
@@ -138,7 +138,7 @@ export const deletePet = async (petId) => {
 
 export const handleAddPet = async (petData) => {
 
-    console.log(petData)
+    // console.log(petData)
     const res = await fetch(`http://localhost:5000/pets`, {
         method: "POST",
         headers: {
@@ -147,7 +147,7 @@ export const handleAddPet = async (petData) => {
         body: JSON.stringify(petData)
     })
     const data = await res.json()
-    console.log(data)
+    // console.log(data)
     if (data.insertedId) {
         return data
     }
@@ -218,7 +218,7 @@ export const updatePet = async (petId, formData) => {
         if (!res.ok) return { success: false };
 
         const data = await res.json();
-        console.log(data, res)
+        // console.log(data, res)
 
         refresh("/dashboard/my-listings")
         return data;
