@@ -2,8 +2,6 @@ import { headers } from 'next/headers'
 import { auth } from './lib/auth'
 import { NextResponse } from 'next/server'
 
-// This function can be marked `async` if using
-// `await` inside
 export async function proxy(request) {
     const session = await auth.api.getSession({
         headers: await headers()

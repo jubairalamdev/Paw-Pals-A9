@@ -7,9 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // Map 'font-lilita' to your Next.js font variable
         lilita: ["var(--font-lilita)", "sans-serif"],
-        // Map 'font-open-sans' as well since you are using it
         "open-sans": ["var(--font-open-sans)", "sans-serif"],
       },
     },

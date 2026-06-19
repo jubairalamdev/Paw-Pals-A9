@@ -12,6 +12,7 @@ const AllPetsPage = ({pets}) => {
   const [selectedSpecies, setSelectedSpecies] = useState("All");
   const [sortBy, setSortBy] = useState("default");
   const [filteredPets, setFilteredPets] = useState(pets);
+  console.log(pets)
 
   // Filter & Sort Logic (Instant update without loading delay)
   useEffect(() => {

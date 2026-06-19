@@ -10,7 +10,7 @@ export const getAllPets = async () => {
     const {token} = await auth.api.getToken({
         headers: await headers()
     })
-    const res = await fetch("http://localhost:5000/pets", {
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/pets`, {
         headers:{
             authorization: `Bearer ${token}`
         }
@@ -23,7 +23,7 @@ export const getPetById = async (petId) => {
     const {token} = await auth.api.getToken({
         headers: await headers()
     })
-    const res = await fetch(`http://localhost:5000/pets/${petId}`, {
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/pets/${petId}`, {
         headers:{
             authorization: `Bearer ${token}`
         }
@@ -33,7 +33,7 @@ export const getPetById = async (petId) => {
 
 export const handleAdoption = async (adoptionData) => {
     // console.log(adoptionData)
-    const res = await fetch(`http://localhost:5000/requests`, {
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/requests`, {
         method: "POST",
         headers: {
             'content-type': 'application/json'
@@ -58,7 +58,7 @@ export const getRequestByUserId = async (userId) => {
         headers: await headers()
     })
     try {
-        const res = await fetch(`http://localhost:5000/requests/${userId}`, {
+        const res = await fetch(`${process.env.NEXT_SERVER_URL}/requests/${userId}`, {
             cache: 'no-store', // Prevents caching stale request data
             headers:{
             authorization: `Bearer ${token}`
@@ -81,7 +81,7 @@ export const getRequestByPetId = async (petId) => {
         headers: await headers()
     })
     try {
-        const res = await fetch(`http://localhost:5000/requests/pets/${petId}`, {
+        const res = await fetch(`${process.env.NEXT_SERVER_URL}/requests/pets/${petId}`, {
             cache: 'no-store',
             headers: {
                 authorization: `Bearer ${token}`
@@ -107,7 +107,7 @@ export const cancelRequest = async (reqId) => {
             return { ok: false, error: "Invalid ID type string provided" };
         }
 
-        const response = await fetch(`http://localhost:5000/requests/${reqId}`, {
+        const response = await fetch(`${process.env.NEXT_SERVER_URL}/requests/${reqId}`, {
             method: 'DELETE',
         });
 
@@ -125,7 +125,7 @@ export const cancelRequest = async (reqId) => {
 
 export const deletePet = async (petId) => {
     try {
-        const response = await fetch(`http://localhost:5000/pets/${petId}`, {
+        const response = await fetch(`${process.env.NEXT_SERVER_URL}/pets/${petId}`, {
             method: 'DELETE',
         });
         refresh("/dashboard/my-listings")
@@ -139,7 +139,7 @@ export const deletePet = async (petId) => {
 export const handleAddPet = async (petData) => {
 
     // console.log(petData)
-    const res = await fetch(`http://localhost:5000/pets`, {
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/pets`, {
         method: "POST",
         headers: {
             'content-type': 'application/json'
@@ -164,7 +164,7 @@ export const getPetsByUserId = async (userId) => {
         headers: await headers()
     })
 
-    const res = await fetch(`http://localhost:5000/pets/listings/${userId}`, {
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/pets/listings/${userId}`, {
         headers: {
             authorization: `Bearer ${token}`
         }
@@ -174,27 +174,9 @@ export const getPetsByUserId = async (userId) => {
 }
 
 export const getRequestsByPetId = async (petId) => {
-    const res = await fetch(`http://localhost:5000/requests/pets/${petId}`);
+    const res = await fetch(`${process.env.NEXT_SERVER_URL}/requests/pets/${petId}`);
     return res.json()
 }
-/*
-export const updatePet = async (petId, updatedPet) => {
-    // 'use server';
-    // const updatedPet = Object.fromEntries(formData.entries());
-    const res = await fetch(`localhost:5000/pets/${petId}`, {
-        method: 'PATCH',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(updatedPet)
-    });
-    const data = await res.json();
-    if (data.modifiedCount > 0) {
-        revalidatePath('/dashboard/my-listings')
-        redirect('/dashboard/my-listings') //optional
-    }
-} 
-*/
 
 export const updatePet = async (petId, formData) => {
     'use server';
@@ -207,7 +189,7 @@ export const updatePet = async (petId, formData) => {
         if (updatedPet.adoptionFee) updatedPet.adoptionFee = Number(updatedPet.adoptionFee);
 
         // 2. Add http:// to prevent the "failed to fetch" network route crash
-        const res = await fetch(`http://localhost:5000/pets/${petId}`, {
+        const res = await fetch(`${process.env.NEXT_SERVER_URL}/pets/${petId}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

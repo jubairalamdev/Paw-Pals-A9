@@ -4,6 +4,7 @@ import { getAllPets } from "@/utils/actions";
 
 const AllPetsPage = async() => {
       const pets = await getAllPets()
+      console.log(pets)
     return (
         <>
             <AllPets pets={pets}/>

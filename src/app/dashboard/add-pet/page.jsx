@@ -133,7 +133,7 @@ const AddPetPage = () => {
                         name="image"
                         required
                         className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#193EAC] outline-none font-(family-name:--font-open-sans)"
-                        placeholder="https://..."
+                        placeholder="Image Link"
                     />
                 </div>
             </div>
