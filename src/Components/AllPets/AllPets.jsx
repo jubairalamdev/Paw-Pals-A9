@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import PetCard from "@/components/common/PetCard";
+import PetCard from "@/Components/common/PetCard";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineSort } from "react-icons/md";
 import Image from "next/image";
