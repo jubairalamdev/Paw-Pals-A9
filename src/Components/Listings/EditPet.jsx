@@ -6,6 +6,8 @@ import { toast } from 'react-toastify';
 
 const EditPet = ({ pet }) => {
 
+    const modalId = `my_modal_${pet._id}`
+
     const updateUserWrapper = async (e) => {
         e.preventDefault();
         const form = e.target;
@@ -21,12 +23,12 @@ const EditPet = ({ pet }) => {
     return (
         <>
             <label
-                htmlFor="my_modal_30000000001"
+                htmlFor={modalId}
                 className="flex items-center justify-center gap-1 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 text-gray-600 text-xs font-bold font-(family-name:--font-open-sans) transition-colors"
             >
                 <Edit size={14} /> Edit
             </label>
-            <input type="checkbox" id="my_modal_30000000001" className="modal-toggle" />
+            <input type="checkbox" id={modalId} className="modal-toggle" />
             <div className="modal" role="dialog">
                 <div className="modal-box bg-white min-w-200 text-gray-800">
                     <form className="bg-white rounded-3xl p-8 space-y-6 text-gray-800 mb-10" onSubmit={(e) => updateUserWrapper(e)}>
@@ -225,7 +227,7 @@ const EditPet = ({ pet }) => {
                             >
                                 Save
                             </button>
-                            <label htmlFor="my_modal_30000000001" className="bg-black text-center rounded-xl text-white text-2xl py-3 flex-1">Close</label>
+                            <label htmlFor={modalId} className="bg-black text-center rounded-xl text-white text-2xl py-3 flex-1">Close</label>
                         </div>
                     </form>
                 </div>
